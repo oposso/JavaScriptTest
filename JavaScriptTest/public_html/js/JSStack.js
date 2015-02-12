@@ -21,13 +21,15 @@ names.reverse();
 /*Print out the even numbers from 0 to 100 - inclusive*/
 //variable array to hold all the value to print
 var line=[];
+var counter = 0;
 
 for (var i = 0; i <= 100; i++) {
-  if (i % 2 == 0){
+  if (i%2===0){
       //print each one as it is encountered
       console.log(line);
       //add each of these values to the array for use later
       line[counter] = i;
+      counter++;
     }
   }
 //print them all out
